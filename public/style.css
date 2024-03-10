@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+}
+
+.title {
+	text-align: center;
+}
+
+#form-github {
+	border: 1px solid black;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
+#result {
+	border: 1px solid black;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+#result h2 {
+	margin: 25px;
+}
