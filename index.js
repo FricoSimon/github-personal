@@ -11,6 +11,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.post('/api/v1/followers', async (req, res) => {
@@ -19,7 +20,14 @@ app.post('/api/v1/followers', async (req, res) => {
     axios.get(`https://api.github.com/users/${username}/followers?per_page=100`)
         .then(response => {
             const followers = response.data.map(follower => follower.login);
-            res.json(followers);
+            arrayOfFollowers = []
+
+            followers.forEach(follower => {
+                arrayOfFollowers.push(follower);
+            });
+
+            console.log(arrayOfFollowers.length);
+            res.json(followers, arrayOfFollowers.length);
         })
         .catch(error => {
             if (error.response.status === 404) {

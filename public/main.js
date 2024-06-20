@@ -12,7 +12,8 @@ submit.addEventListener("click", function (event) {
     })
         .then((response) => response.json())
         .then((data) => {
-            const followers = document.getElementById("result-followers")
+            console.log(data); // Print the data to the console
+            const followers = document.getElementById("result-followers");
             const ol = document.createElement('ol');
             data.forEach(item => {
                 const li = document.createElement('li');
