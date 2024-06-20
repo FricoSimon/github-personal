@@ -38,6 +38,13 @@ npm start
 
 Open your browser and go to `http://localhost:9000`
 
+## Screenshot
+### Main Page Screenshot
+![Main Page](https://github.com/FricoSimon/github-personal/blob/main/Github%20personal%20-%20Main%20page.png)
+
+### Result Page Screenshot
+![Result Page](https://github.com/FricoSimon/github-personal/blob/main/Github%20personal%20-%20Result.png)
+
 ## Contact
 
 Frico Simon - [LinkedIn](https://www.linkedin.com/in/fricosimon/)
